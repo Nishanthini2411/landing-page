@@ -12,7 +12,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/* <App />   */}
       
     
-     <Landingpage/>  
+   
+     <Landingpage/>   
 
       {/* Uncomment the line below to use BiodataLandingPage instead */}
       {/* <BiodataLandingPage /> */}
@@ -20,8 +21,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/* 
       <Inputform/> */}
       
-      {/* 
-      <Login/>  */}
+
+      {/* <Login/>   */}
+      
 
 
 

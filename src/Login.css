@@ -1,59 +1,91 @@
-.login-container {
+/* Full background with gradient */
+.neon-bg {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #f5f6fa;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: 'Poppins', sans-serif;
 }
 
-.login-form {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 350px;
-}
-
-.login-form h2 {
+/* Neon glass card */
+.neon-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 12px;
+  width: 320px;
   text-align: center;
-  margin-bottom: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.form-group {
-  margin-bottom: 15px;
+.login-title {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 500;
+/* Floating labels */
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
 }
 
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button {
+.input-box input {
   width: 100%;
   padding: 12px;
-  background: #4a90e2;
-  color: white;
+  background: transparent;
   border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-box label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: rgba(255,255,255,0.6);
+  transition: 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+/* Neon button */
+.neon-btn {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 10px;
   cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px #ffcc00;
 }
 
-button:hover {
-  background: #357ab8;
+.neon-btn:hover {
+  background: #ffaa00;
+  box-shadow: 0 0 25px #ffaa00;
 }
 
-.error {
-  color: red;
-  text-align: center;
-  margin-bottom: 10px;
+.forgot-text {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forgot-text a {
+  color: #ffcc00;
+  text-decoration: none;
 }
